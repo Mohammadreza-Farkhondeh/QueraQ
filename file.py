@@ -16,5 +16,5 @@ for i in range(2, n+1):
 print('Checking numbers from 2 to %i' %n)
 print('Odd (%i) : %i...%i' %(len(odds), odds[0], odds[-1]))
 print('Even (%i) : %i...%i' %(len(evens), evens[0], evens[-1]))
-print('Square : ',square
+print('Square : ',square)
 print('Cube : ' ,cube)

@@ -1,0 +1,50 @@
+# # practice3/Kuduko.py
+#
+# class Table:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#         self.shape = self.create_empty_table(a, b)
+#
+#     def __str__(self):
+#         stre = ''
+#         liste = []
+#         for s in range(self.a):
+#             rows = [''] * self.b
+#             for i in range(self.b):
+#                 for j in range(self.b):
+#                     for k in range(self.a):
+#                         rows[i] += str(self.shape[s][j].shape[-k-1][i].value)
+#             liste.append(rows)
+#
+#
+#         for i in range(self.a):
+#             for j in range(self.b):
+#                 # stre += ''.join(reversed(liste[-i - 1][-j - 1]))
+#                 stre += ''.join(liste[i][-j-1])
+#                 stre += '\n'
+#         return stre
+#
+#     def create_empty_table(self, x, y):
+#         table = []
+#         for j in range(y):
+#             t_row = []
+#             for i in range(x):
+#                 t_row.append(Block(x, y, (str(i)+str(j))))
+#             table.append(t_row)
+#         return table
+#
+#
+# class Block(Table):
+#     def __init__(self, a, b, B_index):  # B_index is two digits string present coordinates of it like 11
+#         self.a = a
+#         self.b = b
+#         self.B_index = str(B_index)
+#         self.shape = self.create_empty_block(a, b)
+#
+#     def create_empty_block(self, x, y):
+#         block = []
+#         bindex = str(self.B_index)
+#         m, n = int(bindex[0]), int((bindex[1]))
+#         for j in range(x):
+#             block_row = []
